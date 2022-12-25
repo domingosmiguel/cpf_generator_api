@@ -1,0 +1,15 @@
+{
+  "name": "cpf_generator",
+  "version": "1.0.0",
+  "author": "Miguel Domingos",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon -L src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
