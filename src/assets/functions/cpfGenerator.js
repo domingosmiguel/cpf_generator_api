@@ -1,7 +1,7 @@
 import allDigitsAreEqual from './allDigitsAreEqual.js';
-import firstDigit from './firstDigit.js';
+import firstDigit from './firstDigitCPF.js';
 import getRandomArbitraryNumber from './getRandomArbitraryNumber.js';
-import secondDigit from './secondDigit.js';
+import secondDigit from './secondDigitCPF.js';
 
 export default function cpfGenerator(punctuation) {
   const numbers = [];
