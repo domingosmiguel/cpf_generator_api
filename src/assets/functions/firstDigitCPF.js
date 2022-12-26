@@ -1,6 +1,6 @@
 import { TABLE_FIRST_DIGIT_MULTIPLIERS } from '../constants/consts.js';
 
-export default function firstDigit(numbers) {
+export default function firstDigitCPF(numbers) {
   const digit = numbers.reduce(
     (acc, cur, idx) => acc + cur * TABLE_FIRST_DIGIT_MULTIPLIERS[idx],
     0
