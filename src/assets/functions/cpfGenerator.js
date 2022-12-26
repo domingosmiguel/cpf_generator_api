@@ -10,7 +10,7 @@ export default function cpfGenerator(punctuation) {
     numbers.push(getRandomArbitraryNumber(0, 9).toFixed());
   }
   if (allDigitsAreEqual(numbers)) {
-    cpfGenerator(punctuation);
+    return cpfGenerator(punctuation);
   }
   numbers.push(firstDigit(numbers));
   numbers.push(secondDigit(numbers));
