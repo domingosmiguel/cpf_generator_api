@@ -10,6 +10,7 @@ export default function cpfGenerator(mask) {
     numbers.push(getRandomArbitraryNumber(0, 9).toFixed());
   }
   if (allDigitsAreEqual(numbers)) {
+    console.log('repeated numbers on cpfGenerator')
     return cpfGenerator(mask);
   }
   numbers.push(firstDigit(numbers));
