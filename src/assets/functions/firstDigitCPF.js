@@ -1,8 +1,8 @@
-import { TABLE_FIRST_DIGIT_MULTIPLIERS } from '../constants/consts.js';
+import { FIRST_DIGIT_MULTIPLIERS_CPF } from '../constants/consts.js';
 
 export default function firstDigitCPF(numbers) {
   const digit = numbers.reduce(
-    (acc, cur, idx) => acc + cur * TABLE_FIRST_DIGIT_MULTIPLIERS[idx],
+    (acc, cur, idx) => acc + cur * FIRST_DIGIT_MULTIPLIERS_CPF[idx],
     0
   );
   const rest = digit % 11;
