@@ -10,7 +10,7 @@ export default function cnpjGenerator(mask) {
     numbers.push(getRandomArbitraryNumber(0, 9).toFixed());
   }
   if (allDigitsAreEqual(numbers)) {
-    console.log('repeated numbers')
+    console.log('repeated numbers on cnpjGenerator')
     return cnpjGenerator(mask);
   }
   numbers.splice(8, 0, '0', '0', '0', '1');
