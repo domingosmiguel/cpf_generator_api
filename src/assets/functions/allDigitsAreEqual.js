@@ -1,3 +1,4 @@
 export default function allDigitsAreEqual(numbers) {
-  return numbers.every((n, index, arr) => n === arr[0]);
+  const length = numbers.length;
+  return numbers.every((n, index, arr) => n === arr[length - 1]);
 }
